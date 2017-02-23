@@ -5,7 +5,7 @@ import time
 import asyncio
 import discord
 import datetime
-from .utils import checks
+from utils import checks
 from discord.ext import commands
 from random import choice as randchoice
 
