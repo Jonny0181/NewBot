@@ -5,7 +5,6 @@ import time
 import asyncio
 import discord
 import datetime
-import cleverbot
 from .utils import checks
 from discord.ext import commands
 from random import choice as randchoice
