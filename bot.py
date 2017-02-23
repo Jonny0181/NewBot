@@ -31,7 +31,6 @@ async def on_ready():
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
-    bot.remove_command('help')
     await bot.change_presence(game=discord.Game(name="{}help | {}invite".format(prefix)), status=discord.Status.dnd)
     print('------')
     for extension in modules:
