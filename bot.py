@@ -46,7 +46,7 @@ class Default():
 @checks.is_owner()
 async def load(*, module: str):
     """Loads a part of the bot."""
-    module = "mods." + module
+    module = "modules." + module
     try:
         if module in modules:
             await bot.say("Alrigt, loading {}".format(module))
@@ -61,7 +61,7 @@ async def load(*, module: str):
 @checks.is_owner()
 async def unload(*, module: str):
     """Unloads a part of the bot."""
-    module = "mods." + module
+    module = "modules." + module
     try:
         if module in modules:
             await bot.say("Oh, ok, unloading {}".format(module))
@@ -76,7 +76,7 @@ async def unload(*, module: str):
 @checks.is_owner()
 async def reload(*, module: str):
     """Reloads a part of the bot."""
-    module = "mods." + module
+    module = "modules." + module
     try:
         if module in modules:
             await bot.say("Oh, ok, reloading {}".format(module))
