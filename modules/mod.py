@@ -6,6 +6,7 @@ class Mod:
         self.bot = bot
         
 @bot.command(pass_context=True)
+@bot.has_role('Bot Commander')
 async def kick(ctx, user: discord.Member, *, reason: str=None):
     """Kicks a user from your server."""
     author = ctx.message.author
