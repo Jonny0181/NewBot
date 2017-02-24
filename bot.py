@@ -11,11 +11,11 @@ from random import choice as randchoice
 
 prefix = "b"
 description = ''
-bot.pm_help = True
-wrap = "```py\n{}\n```"
+bot = commands.Bot(command_prefix=(prefix), description=description)
 starttime = time.time()
 starttime2 = time.ctime(int(time.time()))
-bot = commands.Bot(command_prefix=(prefix), description=description)
+bot.pm_help = True
+wrap = "```py\n{}\n```"
 
 
 modules = [
