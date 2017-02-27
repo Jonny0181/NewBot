@@ -19,7 +19,7 @@ wrap = "```py\n{}\n```"
 
 
 modules = [
-    'modules.mod']
+    'modules.(module name)']
 
 @bot.event
 async def on_message(message):
@@ -115,7 +115,7 @@ async def setname(ctx, *, name: str):
 bot.add_cog(Default(bot))
 loop = asyncio.get_event_loop()
 try:
-    loop.run_until_complete(bot.login("Mjg0NTE3NzQ2MzMzNDUwMjUx.C5ExUA.ww2YQX7pEri504iXJ7rOiQHCvB0"))
+    loop.run_until_complete(bot.login(""))
     loop.run_until_complete(bot.connect())
 except Exception:
     loop.run_until_complete(os.system("main.py"))
