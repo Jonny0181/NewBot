@@ -19,7 +19,7 @@ wrap = "```py\n{}\n```"
 
 
 modules = [
-    'modules.(module name)']
+    'modules.mod']
 
 @bot.event
 async def on_message(message):
